@@ -1,0 +1,147 @@
+### 📁 **Basic File & Directory Commands**
+
+| Command                    | Description                        |
+| -------------------------- | ---------------------------------- |
+| `pwd`                      | Print working directory            |
+| `ls`                       | List directory contents            |
+| `ls -l / -a / -lh`         | List with details / hidden / human |
+| `cd [dir]`                 | Change directory                   |
+| `cd ..`                    | Go up one directory                |
+| `mkdir [dir]`              | Create new directory               |
+| `touch [file]`             | Create empty file                  |
+| `cp [src] [dest]`          | Copy file or directory             |
+| `mv [src] [dest]`          | Move or rename file                |
+| `rm [file]`                | Delete file                        |
+| `rm -r [dir]`              | Delete directory recursively       |
+| `cat [file]`               | Display file contents              |
+| `nano / vim / less [file]` | Text editors / pager               |
+
+---
+
+### 🔍 **Searching & Filtering**
+
+| Command                     | Description                          |
+| --------------------------- | ------------------------------------ |
+| `find [path] -name "*.txt"` | Find files by name                   |
+| `grep "text" [file]`        | Search text in file                  |
+| `grep -r "text" [dir]`      | Recursively search in dir            |
+| `locate [file]`             | Find path of file (needs `updatedb`) |
+| `which [cmd]`               | Show path of command binary          |
+
+---
+
+### 🧮 **File Permissions & Ownership**
+
+| Command                   | Description                  |
+| ------------------------- | ---------------------------- |
+| `chmod 755 [file]`        | Change file permissions      |
+| `chown user:group [file]` | Change file owner and group  |
+| `ls -l`                   | Show permissions in detail   |
+| `umask`                   | Show default permission mask |
+
+---
+
+### 📦 **Package Management**
+
+#### **Debian/Ubuntu (APT)**
+
+| Command                  | Description          |
+| ------------------------ | -------------------- |
+| `sudo apt update`        | Update package list  |
+| `sudo apt upgrade`       | Upgrade all packages |
+| `sudo apt install [pkg]` | Install package      |
+| `sudo apt remove [pkg]`  | Remove package       |
+
+#### **RedHat/CentOS (YUM/DNF)**
+
+| Command                  | Description      |
+| ------------------------ | ---------------- |
+| `sudo yum install [pkg]` | Install package  |
+| `sudo dnf upgrade`       | Upgrade packages |
+
+---
+
+### ⚙️ **Process & System Monitoring**
+
+| Command          | Description             |
+| ---------------- | ----------------------- |
+| `top` / `htop`   | Show running processes  |
+| `ps aux`         | List all processes      |
+| `kill [PID]`     | Kill process by PID     |
+| `killall [name]` | Kill by name            |
+| `df -h`          | Disk space usage        |
+| `du -sh [dir]`   | Disk usage of directory |
+| `free -h`        | Memory usage            |
+| `uptime`         | System uptime           |
+| `whoami`         | Current user            |
+| `uname -a`       | Kernel info             |
+
+---
+
+### 🌐 **Networking**
+
+| Command                   | Description                        |
+| ------------------------- | ---------------------------------- |
+| `ip a` / `ifconfig`       | Show IP addresses                  |
+| `ping [host]`             | Ping host                          |
+| `traceroute [host]`       | Trace route to host                |
+| `netstat -tulnp`          | Show active ports                  |
+| `ss -tuln`                | Modern netstat replacement         |
+| `curl [url]`              | Fetch URL content                  |
+| `wget [url]`              | Download files                     |
+| `scp user@host:/file .`   | Copy file over SSH                 |
+| `rsync -avz [src] [dest]` | Sync files/directories efficiently |
+
+---
+
+### 🔐 **User & Group Management**
+
+| Command                      | Description           |
+| ---------------------------- | --------------------- |
+| `adduser [name]`             | Add new user          |
+| `passwd [user]`              | Set/change password   |
+| `deluser [name]`             | Delete user           |
+| `usermod -aG [group] [user]` | Add user to group     |
+| `groups [user]`              | Show groups of a user |
+| `id [user]`                  | Show UID, GID         |
+
+---
+
+### 🧪 **Scripting & Advanced Tools**
+
+| Command                        | Description                    |
+| ------------------------------ | ------------------------------ |
+| `bash [script.sh]`             | Run shell script               |
+| `chmod +x script.sh`           | Make script executable         |
+| `cron` / `crontab -e`          | Schedule jobs                  |
+| `alias ll='ls -la'`            | Create alias                   |
+| `export VAR=value`             | Set environment variable       |
+| `tar -czf archive.tar.gz dir/` | Compress directory             |
+| `tar -xzf archive.tar.gz`      | Extract archive                |
+| `mount /dev/sdX /mnt`          | Mount device                   |
+| `df -Th`                       | Show mounted drives with types |
+
+---
+
+### 🧰 **Systemd & Services**
+
+| Command                      | Description    |
+| ---------------------------- | -------------- |
+| `systemctl start [service]`  | Start service  |
+| `systemctl stop [service]`   | Stop service   |
+| `systemctl status [service]` | Service status |
+| `systemctl enable [service]` | Enable on boot |
+| `journalctl -xe`             | View logs      |
+
+---
+
+### 🔄 **Shortcuts & Hotkeys**
+
+| Shortcut   | Description                           |
+| ---------- | ------------------------------------- |
+| `Ctrl + C` | Cancel command                        |
+| `Ctrl + D` | Logout/EOF                            |
+| `Ctrl + Z` | Suspend command                       |
+| `Ctrl + R` | Reverse search in history             |
+| `!!`       | Repeat last command                   |
+| `!abc`     | Repeat last command starting with abc |

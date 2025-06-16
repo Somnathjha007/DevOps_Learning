@@ -1,0 +1,111 @@
+## ⚙️ **DevOps Essentials**
+
+### 🧱 **Docker & Containers**
+
+| Command                            | Description                              |
+| ---------------------------------- | ---------------------------------------- |
+| `docker ps`                        | List running containers                  |
+| `docker images`                    | List local images                        |
+| `docker run -it ubuntu /bin/bash`  | Run container interactively              |
+| `docker build -t myapp .`          | Build Docker image                       |
+| `docker-compose up -d`             | Start services from `docker-compose.yml` |
+| `docker exec -it [container] bash` | Open shell inside container              |
+| `docker logs [container]`          | View container logs                      |
+| `docker rm` / `rmi` / `stop`       | Remove container/image/stop container    |
+
+---
+
+### ☁️ **Kubernetes (kubectl)**
+
+| Command                          | Description       |
+| -------------------------------- | ----------------- |
+| `kubectl get pods`               | List pods         |
+| `kubectl get svc`                | List services     |
+| `kubectl apply -f config.yaml`   | Apply config      |
+| `kubectl describe pod [pod]`     | Describe pod      |
+| `kubectl exec -it [pod] -- bash` | Shell into pod    |
+| `kubectl logs [pod]`             | View pod logs     |
+| `kubectl delete -f config.yaml`  | Delete deployment |
+
+---
+
+### 🧩 **CI/CD Tools**
+
+| Tool          | Command Example                          | Description                |
+| ------------- | ---------------------------------------- | -------------------------- |
+| **Git**       | `git clone`, `git commit -m`, `git push` | Version control            |
+| **Jenkins**   | `jenkins-cli.jar` or Web UI              | CI/CD server automation    |
+| **Ansible**   | `ansible-playbook site.yml`              | Agentless config mgmt      |
+| **Terraform** | `terraform init`, `apply`, `destroy`     | Infra as code              |
+| **Helm**      | `helm install mychart ./chart`           | Kubernetes package manager |
+
+---
+
+## 🤖 **AI/ML Workflow Commands**
+
+### 🧪 **Environment & Package Management**
+
+| Tool                                 | Command                   | Description |
+| ------------------------------------ | ------------------------- | ----------- |
+| `python3 -m venv env`                | Create Python virtual env |             |
+| `source env/bin/activate`            | Activate environment      |             |
+| `pip install numpy pandas`           | Install packages          |             |
+| `conda create -n ml-env python=3.10` | Create Conda env          |             |
+| `conda activate ml-env`              | Activate Conda env        |             |
+
+---
+
+### 📚 **Popular Libraries CLI Use**
+
+| Library/Tool    | Command Example                                              | Description             |
+| --------------- | ------------------------------------------------------------ | ----------------------- |
+| **Jupyter**     | `jupyter notebook` / `lab`                                   | Launch notebook         |
+| **PyTorch**     | `import torch; torch.cuda.is_available()`                    | Check CUDA with PyTorch |
+| **TensorFlow**  | `import tensorflow as tf; tf.config.list_physical_devices()` | Check TF GPU            |
+| **HuggingFace** | `transformers-cli login`                                     | CLI access for HF       |
+
+---
+
+### 🖼️ **GPU & CUDA Tools**
+
+| Command                 | Description         |
+| ----------------------- | ------------------- |
+| `nvidia-smi`            | Show GPU usage      |
+| `nvcc --version`        | Show CUDA version   |
+| `watch -n 1 nvidia-smi` | Live GPU monitoring |
+
+---
+
+### 📈 **ML Model Training Helpers**
+
+| Command / Tool              | Purpose                            |
+| --------------------------- | ---------------------------------- |
+| `tmux` / `screen`           | Run training in persistent session |
+| `nohup python train.py &`   | Run script in background           |
+| `tensorboard --logdir=logs` | Visualize training logs            |
+
+---
+
+## 🧠 **Advanced Tools & Misc**
+
+### 📦 **System Management for DevOps/ML Servers**
+
+| Command                         | Description                  |
+| ------------------------------- | ---------------------------- |
+| `htop` / `nmon`                 | Advanced system monitor      |
+| `watch -n 5 df -h`              | Monitor disk every 5 seconds |
+| `rsync -avz data/ remote:/path` | Transfer files efficiently   |
+| `ncdu`                          | Visual disk usage            |
+
+---
+
+### 🌍 **Networking & Tunnels (DevOps/Model Hosting)**
+
+| Command                          | Description                    |
+| -------------------------------- | ------------------------------ |
+| `ssh user@host`                  | Secure shell                   |
+| `ssh -L 8888:localhost:8888 ...` | Port forwarding (Jupyter etc.) |
+| `ngrok http 8888`                | Temporary tunnel to local port |
+| `iptables` / `ufw`               | Firewall control               |
+
+---
