@@ -1,0 +1,68 @@
+# 📁 1. Initial Setup
+    git config --global user.name "Your Name"
+    git config --global user.email "you@example.com"
+    git init                              # Initialize a new repo
+    git clone <repo_url>                 # Clone an existing repo
+
+# 📄 2. Working Directory / File Status
+    git status                           # See status of files
+    git diff                             # Show unstaged changes
+    git diff --staged                    # Show staged changes
+
+# 📥 3. Staging Changes
+    git add <file>                       # Stage a single file
+    git add .                            # Stage all modified/new files
+    git reset HEAD <file>                # Unstage a file
+
+# ✅ 4. Committing Changes
+    git commit -m "Your message"         # Commit staged changes
+    git commit -am "Message"             # Add & commit tracked files
+
+# 🔄 5. Branching
+    git branch                           # List branches
+    git branch <branch_name>             # Create a branch
+    git checkout <branch_name>           # Switch to branch
+    git checkout -b <branch_name>        # Create and switch to branch
+    git branch -d <branch_name>          # Delete local branch
+
+# 🔀 6. Merging & Conflict Resolution
+    git merge <branch_name>              # Merge branch into current branch
+                                         # If conflict occurs:
+                                         # - Edit files manually
+    git add <conflicted_files>           # Mark conflict resolved
+    git commit                           # Finish merge
+
+# 📤 7. Remote Repositories (GitHub)
+    git remote -v                        # List remotes
+    git remote add origin <repo_url>    # Connect to GitHub repo
+    git push -u origin main              # Push first time
+    git push origin <branch_name>        # Push to specific branch
+    git pull origin <branch_name>        # Pull latest changes
+    git fetch origin                     # Fetch changes without merging
+
+# ⏪ 8. Undoing & Reverting
+    git checkout -- <file>               # Discard changes to a file
+    git reset HEAD <file>                # Unstage file
+    git reset --soft HEAD~1              # Undo commit, keep changes
+    git reset --hard HEAD~1              # Undo commit & changes
+    git revert <commit_hash>             # Revert a specific commit
+
+# 📦 9. Stashing Changes
+    git stash                            # Save uncommitted changes
+    git stash pop                        # Reapply stashed changes
+    git stash list                       # List stashes
+
+# 📚 10. Logs & History
+    git log                              # Full commit history
+    git log --oneline                    # Condensed history
+    git log --graph --oneline --all      # Visual branch tree
+
+# 🧪 11. Tags (Versions)
+    git tag                              # List tags
+    git tag v1.0                         # Create tag
+    git push origin v1.0                 # Push tag
+
+# 🚨 12. Misc & Cleanup
+    git clean -fd                        # Delete untracked files/folders
+    git show <commit_hash>               # Show specific commit details
+    git blame <file>                     # Who last modified each line
